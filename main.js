@@ -17,12 +17,6 @@ var loss = false;
 createCells();
 drawAllCells();
 
-function startGame(){
-	createCells();
-	drawAllCells();
-	pasteNewCell();
-	pasteNewCell();
-}
 
 //changer la taille du jeu 
 changeSize.onclick = function () {
@@ -70,12 +64,12 @@ function drawCell(cell){
 		case 8 : context.fillStyle = '#de4983'; break;
 		case 16 : context.fillStyle = '#d52049'; break;
 		case 32 : context.fillStyle = '#ae1b47'; break;
-		case 64 : context.fillStyle = '#89254b'; break;
-		case 128 : context.fillStyle = '#6f2540'; break;
-		case 256 : context.fillStyle = '#d22364'; break;
-		case 512 : context.fillStyle = '#a81c59'; break;
+		case 64 : context.fillStyle = '#e535b1'; break;
+		case 128 : context.fillStyle = '#c92794'; break;
+		case 256 : context.fillStyle = '#a31f75'; break;
+		case 512 : context.fillStyle = '#87175f'; break;
 		case 1024 : context.fillStyle = '#961651'; break;
-		case 2048 : context.fillStyle = '#691a47'; break;
+		case 2048 : context.fillStyle = '#1E90FF'; break;
 		case 4096 : context.fillStyle = '#87175f'; break;
 		default : context.fillStyle = '#ff0080';
 	}
@@ -129,6 +123,8 @@ function startGame() {
 	pasteNewCell();
 	pasteNewCell();
 
+	score = 0;
+	scoreLabel.innerHTML = 'Score : ' + score;
 	canvas.style.opacity = '1';
 	loss = false;
 }
