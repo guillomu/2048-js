@@ -6,8 +6,9 @@
 
 html, body {
 	height: 100%;
-	background-image: url("img/degrade.jpg");
-	background-repeat: no-repeat;
+	background-image: url("img/degrade.png");
+	background-size: 100%;
+	background-color: #e6a0a0;
 	padding: 2%;
 }
 

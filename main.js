@@ -87,8 +87,8 @@ function drawCell(cell){
 
 //Dessine la grille
 function drawAllCells (){
+	
 	var i, j;
-
 	for(i=0; i < size; i++){
 		for(j=0; j < size; j++){
 			drawCell(cells[i][j]);
